@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="registerPage.master.cs" Inherits="WebApplication2.registerPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            text-align: center;
+        }
+        .auto-style2 {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <div class="auto-style1">
+                    <table class="auto-style2">
+                        <tr>
+                            <td colspan="2">Регистрация</td>
+                        </tr>
+                        <tr>
+                            <td>Введите имя</td>
+                            <td>
+                                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Введите отчество</td>
+                            <td>
+                                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Введите фамилию</td>
+                            <td>
+                                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Введите серию и номер паспорта без пробелов</td>
+                            <td>
+                                <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Введите индекс вашего почтового отделения, состоящий из 6 цифр</td>
+                            <td>
+                                <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Придумайте логин</td>
+                            <td>
+                                <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Придумайте пароль</td>
+                            <td>
+                                <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
